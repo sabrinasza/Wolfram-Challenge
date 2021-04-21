@@ -1,0 +1,30 @@
+🎯The challenge: Write a function that stacks successively longer lists of integers on top of each other;
+👀What your functon should do?
+Write a function NumberTriangle that takes a positive integer n as an input and outputs a column of successively longer lists 
+of consecutive integers up to n. Wrap your answer in 'Column';
+
+📌Exemple: your answer should be a column of lists.
+
+In[3]:= NumberTriangle[3] // InputForm
+Out[3]= Column[{{1}, {1, 2}, {1, 2, 3}}]
+
+-------SCRATCH AREA-------
+In[1]:= Column[{Range[1], Range[2], Range[3]}]
+
+Out[1]= {1}
+        {1,2}
+        {1,2,3}
+
+In[2]:= Table[Range[i], {i, 3}] // Column
+Out[2]= {1}
+        {1,2}
+        {1,2,3}
+---------------------------
+
+----------CODE-------------
+
+NumberTriangle[n_Integer?Positive] := Table[Range[i], {i, n}] // Column
+
+---------------------------
+
+💻Link: https://challenges.wolfram.com/challenge/number-triangles
