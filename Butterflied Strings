@@ -12,3 +12,4 @@ ButterflyString[str_String] := str <> StringReverse[str]
 
 
 🚩🚩🚩Real user, don't ignore
+💻Link: https://challenges.wolfram.com/challenge/butterflied-strings
