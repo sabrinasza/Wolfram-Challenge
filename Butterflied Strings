@@ -1,9 +1,10 @@
-✨Goal: join a string with its reversal;
-✨Details:to butterfly the string "Wolfram", take its reversal "marfloW" and join them to form "WolframmarfloW";
-👀👀What Your Function Should Do???????👀👀
-😎 Write a function ButterflyString that takes a string input and returns the input joined with its reversal;
+🎯The challenge: Join a string with its reversal;
+📌Details:to butterfly the string "Wolfram", take its reversal "marfloW" and join them to form "WolframmarfloW";
+👀What Your Function Should Do?
+ Write a function ButterflyString that takes a string input and returns the input joined with its reversal;
 
-------Code------
+------CODE------
+
 ButterflyString[str_String] := str <> StringReverse[str]
 
 
