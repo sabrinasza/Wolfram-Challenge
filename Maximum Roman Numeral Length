@@ -1,0 +1,24 @@
+🎯The challenge: Write a function that finds the maximum length of any Roman numeral up to n.
+📌Details: The first five Roman numerals are I, II, III, IV, V, and so the maximum length of any Roman numeral up to n=5 is 3.
+👀What your function should do?
+Write a function "MaxRomanLength' that takes a positive integer n as an input and outputs the maximum length of any Roman numeral up to n.
+Use 'RomanNumeral' to generate the numerals.
+
+-----SCRATCH AREA-----
+In[28]:= RomanNumeral[Range[8]]
+Out[28]= {"I", "II", "III", "IV", "V", "VI", "VII", "VIII"}
+
+In[29]:= StringLength[%]
+Out[29]= {1, 2, 3, 2, 1, 2, 3, 4}
+
+In[30]:= Max[%]
+Out[30]= 4
+
+-----------------------
+
+---------CODE----------
+
+MaxRomanLength[n_Integer?Positive] := 
+ Max@StringLength[RomanNumeral[Range[n]]]
+
+-----------------------
