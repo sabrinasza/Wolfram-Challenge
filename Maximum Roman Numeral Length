@@ -18,7 +18,7 @@ Out[30]= 4
 
 ---------CODE----------
 
-MaxRomanLength[n_Integer?Positive] := 
+In[30]:= MaxRomanLength[n_Integer?Positive] := 
  Max@StringLength[RomanNumeral[Range[n]]]
 
 -----------------------
