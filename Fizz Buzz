@@ -1,6 +1,12 @@
+🎯The challenge: Given a list of integers from 1 to n, write a function that replaces multiples of 3 with "fizz",
+   multiples of 5 with "buzz", multiples of both 3 and 5 with "fizzbuzz" and leaves other numbers fixed;
 
+📌Details:for example, the input 7 gives the list:
+   {1,2,"fizz",4,"buzz","fizz",7}
 
-
+👀What Your Function Should Do?Write a function called FizzBuzz that takes a positive integer n. 
+  The function returns a list of the integers from 1 to n, with multiples of 3 replaced by "fizz", 
+  multiples of 5 replaced by "buzz" and multiples of both 3 and 5 replaced by "fizzbuzz".
 
 
 -----CODE------
@@ -20,4 +26,4 @@ In[16]:= TFizzBuzzV2[20] // AbsoluteTiming
 Out[16]= {0.0002462, {1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz", 16, 17, "fizz", 19, "buzz"}}
 
 ------------------
-💻
+💻https://challenges.wolfram.com/challenge/fizz-buzz
