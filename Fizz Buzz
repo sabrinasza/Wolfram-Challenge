@@ -1,0 +1,23 @@
+
+
+
+
+
+-----CODE------
+
+In[14]:= If[Mod[#, 3] == 0, "fizz", #] & /@ Range[15]
+
+Out[14]= {1, 2, "fizz", 4, 5, "fizz", 7, 8, "fizz", 10, 11, "fizz", 13, 14, "fizz"}
+
+In[15]:= TFizzBuzzV2[n_Integer] /; n > 0 := 
+    If[Mod[#, 15] == 0, "fizzbuzz", 
+    If[Mod[#, 3] == 0, "fizz", 
+    If[Mod[#, 5] == 0, "buzz", #]]] & /@ 
+  Range[n]
+  
+In[16]:= TFizzBuzzV2[20] // AbsoluteTiming 
+  
+Out[16]= {0.0002462, {1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz", 16, 17, "fizz", 19, "buzz"}}
+
+------------------
+💻
