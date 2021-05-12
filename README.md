@@ -1,2 +1,2 @@
 # Wolfram-Challenge
-Desafios propostos pelo Wolfram (para Summer School).
+Desafios propostos pelo Wolfram (Summer School), usando o Mathematica.
